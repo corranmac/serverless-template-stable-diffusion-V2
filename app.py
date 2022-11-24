@@ -73,7 +73,7 @@ def inference(model_inputs:dict) -> dict:
     num_inference_steps = model_inputs.get('num_inference_steps', 50)
     guidance_scale = model_inputs.get('guidance_scale', 7.5)
     input_seed = model_inputs.get("seed",None)
-    sampler_type = model_inputs.get("sampler_type",None)
+    sampler_type = model_inputs.get("sampler_type","ddim")
     batch_size = model_inputs.get("batch_size",4)
     guidance_scale = model_inputs.get("guidance_scale",9.0)
     
