@@ -9,7 +9,7 @@ def download_model():
     #Set auth token which is required to download stable diffusion model weights
     HF_AUTH_TOKEN = os.getenv("HF_AUTH_TOKEN")
     os.system("git clone https://github.com/Stability-AI/stablediffusion/")
-    sys.path.instert(1,"stablediffusion")
+    sys.path.insert(1,"stablediffusion")
     os.chdir("stablediffusion")
     os.mkdir("checkpoints")
     os.mkdir("midas")
